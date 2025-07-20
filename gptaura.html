@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+body {
+  background-image: url("download.jpg");
+  background-size: 100% 100%; /* no stretching blur */
+  background-position: center;
+  background-repeat: no-repeat;
+  image-rendering: crisp-edges;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+
+    form {
+      background-color: rgba(0, 0, 0, 0.85); /* semi-transparent black */
+      color: white;
+      text-align: center;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffff44;
+      width: 400px;
+    }
+
+    input, select, textarea {
+      margin-bottom: 12px;
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: none;
+      background-color: #111;
+      color: white;
+    }
+
+    input[type="submit"] {
+      background-color: #00ffff;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #00dddd;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <fieldset style="border: none;">
+      <legend style="font-size: 20px;">🌀 THE Aura Farmer Form</legend>
+
+      <input type="text" id="name" name="name" placeholder="Type your Aura Name"><br>
+
+      <select id="gender" name="gender">
+        <option value="male">Aura♂️</option>
+        <option value="female">Aura♀️</option>
+      </select><br>
+
+      <select id="clan" name="clan">
+        <option value="shadow">🌑 Shadow Clan</option>
+        <option value="flame">🔥 Flame Clan</option>
+        <option value="storm">⚡ Storm Clan</option>
+      </select><br>
+
+      <label><input type="radio" name="mode" value="og"> OG</label>
+      <label><input type="radio" name="mode" value="newbie"> Newbie</label><br>
+
+      <label><input type="checkbox" name="laptop" value="yes"> 💻 Laptop Laaye ho?</label><br><br>
+
+      <input type="number" id="level" name="level" placeholder="Power Level (1-9000)" min="1" max="9000"><br>
+
+      <textarea id="msg" name="msg" rows="3" placeholder="Message to the Aura Council"></textarea><br>
+
+      <video width="100%" controls>
+        <source src="WhatsApp Video 2025-07-14 at 9.38.18 PM.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video><br><br>
+
+      <input type="submit" value="🧿 Submit Aura">
+      <input type="file">
+    </fieldset>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #121212;
+background-image: url("download.jpg");       background-repeat: no-repeat;
+background-size: cover; 
+      display: flex;
+      background-position: center;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      border: 2px solid #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      background-color: #000000;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>📝 Simple Survey Form</h2>
+
+    <!-- Name Input -->
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- Age Input -->
+    <label for="age">Your Age:</label><br>
+    <input type="number" id="age" name="age" min="10" max="99"><br><br>
+
+    <!-- Game Genre Dropdown -->
+    <label for="favgame">Favorite Game Genre:</label><br>
+    <select id="favgame" name="favgame">
+      <option value="rpg">RPG</option>
+      <option value="fps">FPS</option>
+      <option value="racing">Racing</option>
+      <option value="strategy">Strategy</option>
+    </select><br><br>
+
+    <!-- Radio Buttons for Game Frequency -->
+    <label>How often do you play?</label><br>
+    <label><input type="radio" name="frequency" value="daily"> Daily</label>
+    <label><input type="radio" name="frequency" value="weekly"> Weekly</label>
+    <label><input type="radio" name="frequency" value="rarely"> Rarely</label><br><br>
+
+    <!-- Feedback Textarea -->
+    <label for="comments">Any Comments?</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
